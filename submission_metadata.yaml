@@ -1,0 +1,45 @@
+team_name: "TalentPulse" 
+primary_contact:
+  name: "Nisha Kumari"
+  email: "nishajmp232@example.com"
+  phone: "+91-9798040419"      
+
+team_members:
+  name: "Nisha Kumari"
+  email: "nishajmp232@example.com"
+  role: "Team Lead"   
+  
+github_repo: "https://github.com/Nishakr23/TalentPulse-AI/tree/main" 
+sandbox_link: "https://nishakr23-talentpulse-ai-app-nrifmv.streamlit.app/" 
+reproduce_command: "python rank.py"  
+
+compute:
+  platform: "Windows Laptop"                    
+  cpu_cores: 8                                  
+  ram_gb: 16                                    
+  python_version: "3.11.4"                      
+  os: "Windows 11"                              
+  uses_gpu_for_inference: false  
+  has_network_during_ranking: false  
+
+  ai_tools_used:
+    - "ChatGPT"        
+    - "GitHub Copilot"  
+
+ai_usage_summary: |
+  ChatGPT se code debug kiya aur logic discuss kiya. 
+  Copilot autocomplete ke liye use kiya.
+  Candidate data kisi LLM ko nahi diya.
+
+methodology_summary: |
+  TalentPulse AI is a deterministic rule-based ranker designed for transparent candidate-job matching without LLMs during inference. The system parses structured candidate data and scores profiles across five weighted components: skills match, title and career progression, years of experience, location fit, and education relevance. 
+  Skills scoring uses an endorsement-weighted and duration-based trust multiplier to penalize keyword stuffing and reward genuine expertise. Title matching acts as the decisive signal against inflated roles by analyzing career trajectory rather than surface keywords. Behavioral signals like job-hopping and tenure consistency apply multiplicative modifiers to the base score.
+  The ranker enforces strict compute constraints: CPU-only, no network calls during ranking, and sub-5-minute runtime for 50K candidates on 16GB RAM. Pre-computation is limited to one-time TF-IDF vectorization of skill taxonomies. All scoring logic is explicit and auditable, producing ranked XLSX output with component-wise score breakdowns for explainability.
+  Key differentiators include anti-gaming heuristics for common CV traps, deterministic outputs for compliance, and human-readable reasoning logs. The approach prioritizes precision and fairness over black-box ML, ensuring recruiters can defend every ranking decision. Runtime averages 8 seconds for 10K candidates on standard hardware.
+
+  declarations:
+  read_submission_spec: true   
+  code_is_original_work: true       
+  no_collusion: true              
+  honeypot_check_done: false     
+  reproduction_tested: true         
