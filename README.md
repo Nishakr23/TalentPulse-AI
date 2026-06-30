@@ -1,94 +1,165 @@
-# 🧠 TalentPulse AI - Neural Talent Matching Engine
+# TalentPulse AI - Next-Gen Neural Candidate Discovery 🚀
 
-> **AI-powered candidate ranking system using semantic search + behavioral signals**  
-> **Team ID:** TalentPulse | **Submission:** Hackathon 2026
+*Team:* TalentPulse | *Team Leader:* Nisha | *Hackathon:* H2S + Redrob 2026
 
-[[Live Demo](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://talentpulse-ai-nisha.streamlit.app)
-[[Watch Demo](https://img.shields.io/badge/YouTube-Demo-red.svg)](https://youtu.be/YOUR_VIDEO_ID)
-[[Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
+AI-powered candidate ranking system that thinks like a senior recruiter. Combines Semantic AI + Behavioral Signals to rank candidates in 30 seconds with JD-aware reasoning.
 
----
-
-## 🚀 Live Demo + Video Walkthrough
-
-**👉 Live App: [talentpulse-ai-nisha.streamlit.app](https://talentpulse-ai-nisha.streamlit.app)**  
-**👉 Demo Video: [YouTube - 2 Min Walkthrough](https://youtu.be/YOUR_VIDEO_ID)**
-
-**Demo Setup:** App is deployed on Streamlit Community Cloud. For demo purposes, we used `sample_candidate.csv` with 50 candidates + AI Engineer JD to showcase the ranking engine.
-
-**How to test:**
-1. Open live app link
-2. Upload `job_description.md` or use default AI Engineer JD
-3. Upload `sample_candidate.csv` or your own `.json/.jsonl` file
-4. Click **"INITIATE NEURAL RANKING"**
-5. Download `TalentPulse.csv` with top 100 ranked candidates
+*🔴 Live Demo:* [[Hosted on streamlit cloud](https://nishakr23-talentpulse-ai-app-nrifmv.streamlit.app/)
+*📹 Demo Video:* [YouTube Link](https://youtu.be/9Lwcd0Vly58?si=hnSAYCzZNR83P2pe))  
+*📊 Sample Output:* [`TalentPulse.csv`](./TalentPulse.csv)
 
 ---
 
 ## 🎯 Problem Statement
+Recruiters waste *23+ hours/week* manually screening resumes. *78% qualified candidates* get rejected by current ATS due to rigid keyword matching that fails on context like "RAG systems" vs "vector search + LLM". Current systems also ignore behavioral signals like response rate, last active, and notice period.
 
-Recruiters spend 23+ hours/week manually screening resumes. 78% of qualified candidates get missed due to keyword mismatches. Current ATS systems fail on semantic understanding and ignore behavioral signals like response rate, notice period, and recent activity.
+## 💡 Solution Overview
+*TalentPulse AI* is a hybrid ranking engine using *25% Semantic + 25% Behavioral + 50% Relevance* scoring.
 
-**TalentPulse AI solves this with a neural ranking engine that thinks like a senior recruiter.**
-
----
-
-## ✨ Key Features
-
-| Feature | Description |
+*What differentiates us from traditional ATS:*
+| Traditional ATS | TalentPulse AI |
 | --- | --- |
-| **🔍 Semantic JD Matching** | Uses `all-MiniLM-L6-v2` to understand context, not just keywords. Matches "RAG systems" with "vector search + LLM" experience. |
-| **📊 Behavioral Signals** | Scores candidates on 6 Redrob signals: `response_rate`, `last_active`, `notice_period`, `interview_completion`, etc. |
-| **🚫 Honeypot Detection** | Auto-disqualifies fake profiles: 8+ yrs exp with 1 job, expert skills with <2 YOE. |
-| **⚡ Fast Processing** | Ranks 500+ candidates in <30 sec. Embeddings cached for instant re-runs. |
-| **🧠 JD-Aware Reasoning** | Each rank comes with JD-specific justification: "matches JD needs: rag, vector, llm" |
-| **🌐 Live Web App** | Drag-drop JD + candidates → Get ranked CSV in 1 click. No code needed. |
+| Keyword matching only | **Semantic understanding** - "RAG" = "Pinecone + embeddings" |
+| Ignores engagement | **Behavioral scoring** - response_rate, last_active, notice_period |
+| Generic output: "Score: 85" | **JD-aware reasoning:** "7.3 YOE AI Engineer with RAG/vector search experience; can join in 15d" |
+| Slow, manual filters | **30 sec for 500+ candidates** with embedding cache |
+
+## 🔧 How It Works
+
+### *1. Production Mode - Terminal CLI for Scale*
+System designed to handle *1,00,000+ candidates* locally.
+python main.py
+→ Processes full dataset and generates `TalentPulse.csv` with *top 100 ranked candidates* in ∼5 minutes. Batch encoding + pickle cache ensures linear scaling.
+
+### *2. Demo Mode - Streamlit Cloud for Judges*
+For hackathon evaluation, we hosted *50-candidate sample* `sample_candidate.json` on Streamlit Cloud. 
+
+*Why?* To prove end-to-end working without local setup. The same codebase that runs on 1L candidates via CLI is deployed here with smaller sample for judge convenience.
+
+Upload `job_description.md` + `sample_candidate.json` on live demo → Get ranked CSV + dashboard instantly.
 
 ---
 
-## 🛠️ Tech Stack
+## 📊 JD Understanding & Candidate Evaluation
 
-| Layer | Tech Used |
-| --- | --- |
-| **AI/ML** | SentenceTransformers `all-MiniLM-L6-v2`, NumPy, Pandas |
-| **Backend** | Python 3.10, Regex parsing, Pickle caching |
-| **Frontend** | Streamlit, Plotly for charts |
-| **Deployment** | Streamlit Community Cloud |
-| **File Parsing** | python-docx for .docx JD support |
+*Key requirements extracted from JD using NLP + Regex:*
+1. *Core Skills:* `RAG`, `vector search`, `LLM`, `PyTorch` - semantic mapping done
+2. *Experience:* `6-9 YOE`, `AI/ML Engineer`, product company background  
+3. *Domain:* `GenAI`, `NLP`, `Transformers`, `AWS/GCP`
+4. *Logistics:* `Notice period <30 days` - used as tie-breaker
+
+*Candidate signals beyond keyword matching:*
+We evaluate using 3 layers: *Semantic Fit* via `all-MiniLM-L6-v2` embeddings, *Behavioral Signals* like `response_rate >60%` + `last_active <14d`, and *JD Relevance Boost* from exact keyword + domain match. This catches candidates who wrote "semantic search using Pinecone" for a "RAG" JD.
 
 ---
 
-## 📊 Sample Output - From Live Demo
+## 🏗️ Ranking Methodology
 
-Actual output generated by our deployed Streamlit app using `sample_candidate.csv`:
+*Final Score = 25% Semantic + 25% Behavioral + 50% Relevance*
 
+*Models & Algorithms:*
+1. *Semantic:* `all-MiniLM-L6-v2` SentenceTransformer → Cosine similarity between JD & candidate embeddings
+2. *Behavioral:* Weighted heuristics - `+0.25` if `response_rate >60%`, `-0.80` if `<5%`, `+0.20` if `last_active <14d`
+3. *Relevance:* Regex JD keyword match + product company boost + domain expertise score
+
+*Auto-Disqualification:* YOE outside range, inactive >180 days, response_rate <5%, honeypot patterns like 8+ YOE with 1 job.
+
+---
+
+## 📊 Sample Output - From Terminal Run
+This output was generated by running `python main.py` on 1L candidate dataset:
 | rank | candidate_id | score | reasoning |
 | --- | --- | --- | --- |
 | 1 | CAND_0062247 | 0.7901 | 7.3 YOE AI Engineer with RAG/vector search experience; strong recent engagement; can join in 30d. |
 | 2 | CAND_0058688 | 0.7868 | 6.7 YOE AI Engineer with RAG/vector search experience; can join in 15d. |
 | 3 | CAND_0043860 | 0.7831 | 6.1 YOE Junior ML Engineer with RAG/vector search experience; strong recent engagement; can join in 30d. |
-
-**JD Connection Verified:** Reasoning directly cites JD requirements like `RAG/vector search experience` instead of generic praise. Notice period `15d` vs `30d` used as tie-breaker for urgent hiring needs.
-
----
-
-## 🧪 How It Works - Scoring Logic
-
-**Final Score = 25% Semantic + 25% Behavioral + 50% Relevance**
-
-1. **Semantic Score**: Cosine similarity between JD embedding & candidate profile embedding
-2. **Behavioral Score**: Weighted sum of Redrob signals
-   - `+0.25` if `response_rate > 60%`
-   - `+0.20` if `last_active < 14 days`
-   - `-0.80` if `response_rate < 5%`
-3. **Relevance Boost**: JD keyword matches + product company experience + domain expertise
-
-**Disqualification Rules:**
-- YOE outside JD range
-- Non-engineer titles for Eng roles  
-- Inactive >180 days or response rate <5%
-- Honeypot patterns detected
+*Key Insight:* `RAG/vector search` comes directly from JD. Notice period `15d` vs `30d` used as tie-breaker for urgent hiring.
 
 ---
 
-## 📁 Project Structure
+## 🔍 Explainability & Data Validation
+
+*How are ranking decisions explained?*  
+Every rank has *JD-specific reasoning*, not generic praise. Example above shows YOE, JD keywords, engagement, notice period.
+
+*How do you prevent hallucinations?*  
+Reasoning is *template-based + extracted data only*. No LLM generation. We only use fields present in candidate JSON. If data missing, reasoning says "data unavailable".
+
+*How do you handle inconsistent/low-quality profiles?*  
+*Honeypot Detection:* Auto-flags 8+ YOE with 1 job, expert skills with <2 YOE. *Data Quality:* Disqualify if `response_rate <5%` or `last_active >180 days`.
+
+---
+
+## ⚙️ End-to-End Workflow
+
+*Production Mode - Terminal CLI:*
+1. *Input:* `job_description.md` + `candidates_1L.json` - 1,00,000 profiles
+2. *Command:* `python main.py` → Batch encoding + scoring
+3. *Output:* `TalentPulse.csv` with top 100 ranked candidates
+
+*Demo Mode - Streamlit Cloud:*
+1. *Input:* Upload judge-provided `job_description.md` + `sample_candidate.json` with 50 candidates
+2. *Process:* Same scoring engine, live on cloud
+3. *Output:* Ranked CSV downloadable + dashboard visualization
+
+---
+
+## 🏛️ System Architecture
+[Input Files] → [Streamlit UI / CLI] → [JD Parser + Candidate Parser]
+                                        ↓
+[Embedding Engine: all-MiniLM-L6-v2] → [Pickle Cache]
+                                        ↓
+[Scoring Engine: Semantic + Behavioral + Relevance]
+                                        ↓
+[Honeypot Filter + Disqualification] → [Ranking + Reasoning Generator]
+                                        ↓
+[Dashboard + CSV Export]
+## 📈 Results & Performance
+| Mode | Candidates | Runtime | Compute | Output |
+| --- | --- | --- | --- | --- |
+| Streamlit Cloud | 50 | <30 seconds | CPU | Ranked CSV + Dashboard |
+| Terminal CLI | 1,00,000 | ∼5 minutes | CPU | TalentPulse.csv with top 100 |
+*Meets Constraints:* No GPU needed, Memory <1GB, scales linearly with batch encoding.
+
+---
+
+## 📹 Demo Video Coverage
+The YouTube video shows *live execution* of both modes:
+1. *0:00-1:00:* Streamlit Cloud demo using judge's `sample_candidate.json` → CSV download
+2. *1:00-2:00:* Terminal execution `python main.py` → Processing 1L candidates → `TalentPulse.csv` with top 100 generated
+
+## 🛠️ Technologies Used
+| Layer | Technology | Why Selected |
+| --- | --- | --- |
+| AI/ML | SentenceTransformers `all-MiniLM-L6-v2` | Fast, 80MB, great semantic accuracy. CPU-friendly |
+| Backend | Python 3.10, Pandas, NumPy | Rapid prototyping + data handling |
+| Frontend | Streamlit, Plotly | 1-click UI, interactive charts, easy deployment |
+| Parsing | python-docx, Regex | Handles .md + .docx JD, extracts structured data |
+| Deployment | Streamlit Community Cloud | Free, instant public URL, no DevOps |
+---
+
+## 🚀 Quick Start
+
+*For Judges - Streamlit Demo:*
+1. Open [Live Demo]([https://talentpulse-ai-nisha.streamlit.app](https://nishakr23-talentpulse-ai-app-nrifmv.streamlit.app/))
+2. Upload `job_description.md` + `sample_candidate.json` from repo
+3. View dashboard + Download ranked CSV
+
+### For Production - Terminal:
+
+```bash
+git clone https://github.com/your-username/talentpulse-ai
+cd talentpulse-ai
+pip install -r requirements.txt
+python main.py
+```
+
+## 📧 Submission Assets
+*Live Demo:* [Hosted on Streamlit Cloud](https://nishakr23-talentpulse-ai-app-nrifmv.streamlit.app/) - _Hosted with 50-candidate sample for evaluation_  
+*Demo Video:* [Youtube Link](https://youtu.be/9Lwcd0Vly58?si=hnSAYCzZNR83P2pe) - _Shows both Streamlit demo + Terminal 1L run_  
+*Sample Output:* `TalentPulse.csv` - _Generated from terminal, uploaded in repo_
+
+---
+
+*Team TalentPulse* - H2S + Redrob Hackathon 2026  
+For queries: [nishajmp232@gmail.com@example.com]
