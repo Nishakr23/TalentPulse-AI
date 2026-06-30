@@ -1,0 +1,101 @@
+candidate_id,rank,score,reasoning
+CAND_0062247,1,0.7901,7.3 YOE AI Engineer with RAG/vector search experience; strong recent engagement; can join in 30d.
+CAND_0058688,2,0.786837,6.7 YOE AI Engineer with RAG/vector search experience; can join in 15d.
+CAND_0043860,3,0.783135,6.1 YOE Junior ML Engineer with RAG/vector search experience; strong recent engagement; can join in 30d.
+CAND_0002025,4,0.770612,5.9 YOE Senior AI Engineer with RAG/vector search experience; strong recent engagement; can join in 30d.
+CAND_0081846,5,0.768106,6.7 YOE Lead AI Engineer with RAG/vector search experience; can join in 30d.
+CAND_0097176,6,0.760737,5.9 YOE ML Engineer; matches 'applied ML' profile in JD; strong recent engagement; can join in 30d.
+CAND_0055905,7,0.759513,8.1 YOE Senior Machine Learning Engineer with RAG/vector search experience; strong recent engagement; can join in 30d.
+CAND_0079387,8,0.755568,6.9 YOE AI Engineer with RAG/vector search experience; strong recent engagement; can join in 30d.
+CAND_0006567,9,0.754207,7.9 YOE Senior AI Engineer with RAG/vector search experience; strong recent engagement.
+CAND_0088025,10,0.750833,8.6 YOE Staff Machine Learning Engineer with RAG/vector search experience; strong recent engagement.
+CAND_0080766,11,0.746134,8.8 YOE Staff Machine Learning Engineer with RAG/vector search experience.
+CAND_0003791,12,0.745147,6.6 YOE ML Engineer with RAG/vector search experience.
+CAND_0093193,13,0.744587,7.9 YOE Senior Machine Learning Engineer with RAG/vector search experience.
+CAND_0018499,14,0.744449,7.2 YOE Senior Machine Learning Engineer with RAG/vector search experience; can join in 15d.
+CAND_0076482,15,0.743825,6.6 YOE ML Engineer with RAG/vector search experience; strong recent engagement.
+CAND_0028422,16,0.742283,5.5 YOE Junior ML Engineer with RAG/vector search experience; strong recent engagement.
+CAND_0026942,17,0.740491,6.0 YOE Junior ML Engineer with RAG/vector search experience; strong recent engagement; can join in 30d.
+CAND_0050876,18,0.739154,6.0 YOE Applied ML Engineer with RAG/vector search experience.
+CAND_0053591,19,0.736213,5.3 YOE AI Engineer building RAG systems at product companies; strong recent engagement.
+CAND_0071974,20,0.730586,7.8 YOE Senior AI Engineer with RAG/vector search experience; strong recent engagement.
+CAND_0046525,21,0.728289,6.1 YOE Senior Machine Learning Engineer with RAG/vector search experience; strong recent engagement.
+CAND_0049540,22,0.726805,6.8 YOE ML Engineer with RAG/vector search experience; strong recent engagement.
+CAND_0030031,23,0.725733,5.7 YOE AI Engineer with RAG/vector search experience; strong recent engagement; can join in 30d.
+CAND_0046353,24,0.725114,6.4 YOE ML Engineer with RAG/vector search experience; some concern on notice period (120 days).
+CAND_0068351,25,0.724835,6.4 YOE Lead AI Engineer with RAG/vector search experience; strong recent engagement.
+CAND_0068932,26,0.723328,5.2 YOE ML Engineer with RAG/vector search experience; strong recent engagement; can join in 30d.
+CAND_0006418,27,0.72242,5.7 YOE Machine Learning Engineer building RAG systems at product companies; strong recent engagement.
+CAND_0007412,28,0.722016,7.4 YOE Applied ML Engineer building RAG systems at product companies; strong recent engagement; some concern on notice period (120 days).
+CAND_0078002,29,0.720927,6.3 YOE Machine Learning Engineer building RAG systems at product companies; strong recent engagement.
+CAND_0061257,30,0.719444,8.0 YOE Staff Machine Learning Engineer with RAG/vector search experience; strong recent engagement; can join in 30d.
+CAND_0010603,31,0.71872,5.3 YOE ML Engineer with RAG/vector search experience; strong recent engagement.
+CAND_0003841,32,0.717693,5.0 YOE ML Engineer with RAG/vector search experience; can join in 30d.
+CAND_0052335,33,0.715729,6.4 YOE Applied ML Engineer with RAG/vector search experience; strong recent engagement.
+CAND_0005538,34,0.714746,5.9 YOE Senior AI Engineer with RAG/vector search experience; strong recent engagement.
+CAND_0053431,35,0.713876,6.1 YOE ML Engineer with RAG/vector search experience.
+CAND_0077337,36,0.713041,7.0 YOE Staff Machine Learning Engineer with RAG/vector search experience; strong recent engagement.
+CAND_0016163,37,0.712997,6.7 YOE Applied ML Engineer with RAG/vector search experience; some concern on notice period (120 days).
+CAND_0038949,38,0.712395,6.4 YOE ML Engineer with RAG/vector search experience; some concern on notice period (120 days).
+CAND_0049538,39,0.712274,5.8 YOE Applied ML Engineer with RAG/vector search experience; can join in 30d.
+CAND_0029971,40,0.710466,5.4 YOE Junior ML Engineer with RAG/vector search experience.
+CAND_0067535,41,0.709446,6.8 YOE Junior ML Engineer with RAG/vector search experience; strong recent engagement.
+CAND_0033987,42,0.708862,6.8 YOE ML Engineer with RAG/vector search experience.
+CAND_0044248,43,0.707043,6.9 YOE Junior ML Engineer with RAG/vector search experience; strong recent engagement; some concern on notice period (120 days) & low recent activity.
+CAND_0074735,44,0.706485,5.5 YOE Applied ML Engineer with RAG/vector search experience; strong recent engagement.
+CAND_0064888,45,0.705632,5.8 YOE ML Engineer with RAG/vector search experience; strong recent engagement; can join in 30d.
+CAND_0061819,46,0.704593,5.0 YOE Junior ML Engineer with RAG/vector search experience; strong recent engagement; some concern on notice period (120 days).
+CAND_0039962,47,0.703721,6.5 YOE ML Engineer with RAG/vector search experience.
+CAND_0054100,48,0.703256,6.0 YOE Junior ML Engineer with RAG/vector search experience; strong recent engagement.
+CAND_0050454,49,0.701938,6.8 YOE AI Engineer with RAG/vector search experience; strong recent engagement; can join in 30d.
+CAND_0058575,50,0.699443,5.8 YOE AI Engineer with RAG/vector search experience.
+CAND_0033445,51,0.698324,6.8 YOE ML Engineer with RAG/vector search experience; strong recent engagement; can join in 30d.
+CAND_0073504,52,0.6981,6.6 YOE Junior ML Engineer with RAG/vector search experience; strong recent engagement.
+CAND_0038368,53,0.697443,5.4 YOE ML Engineer with RAG/vector search experience; can join in 30d.
+CAND_0023093,54,0.696836,5.1 YOE ML Engineer with RAG/vector search experience; strong recent engagement; some concern on low recent activity.
+CAND_0098846,55,0.696539,7.6 YOE AI Engineer with RAG/vector search experience.
+CAND_0082489,56,0.694642,5.3 YOE ML Engineer with RAG/vector search experience; some concern on low recent activity.
+CAND_0083879,57,0.694398,7.1 YOE Machine Learning Engineer building RAG systems at product companies; can join in 30d.
+CAND_0072660,58,0.693487,7.1 YOE Machine Learning Engineer with RAG/vector search experience; can join in 30d.
+CAND_0042100,59,0.69193,7.3 YOE Machine Learning Engineer building RAG systems at product companies; strong recent engagement.
+CAND_0064256,60,0.690403,6.4 YOE Junior ML Engineer with RAG/vector search experience; strong recent engagement; can join in 30d.
+CAND_0094482,61,0.690227,6.4 YOE Junior ML Engineer with RAG/vector search experience; strong recent engagement.
+CAND_0045250,62,0.689586,6.6 YOE Applied ML Engineer building RAG systems at product companies; can join in 15d.
+CAND_0043304,63,0.68808,6.5 YOE Junior ML Engineer; matches 'applied ML' profile in JD; some concern on low recent activity.
+CAND_0099751,64,0.687947,5.5 YOE Junior ML Engineer with RAG/vector search experience; some concern on notice period (120 days).
+CAND_0096655,65,0.687579,5.9 YOE Junior ML Engineer with RAG/vector search experience; strong recent engagement.
+CAND_0041016,66,0.687441,5.2 YOE Junior ML Engineer; matches 'applied ML' profile in JD; strong recent engagement.
+CAND_0043637,67,0.687149,5.5 YOE Junior ML Engineer with RAG/vector search experience; strong recent engagement.
+CAND_0080102,68,0.687045,6.5 YOE Junior ML Engineer with RAG/vector search experience.
+CAND_0013393,69,0.686678,5.3 YOE ML Engineer with RAG/vector search experience.
+CAND_0051292,70,0.686611,5.2 YOE Applied ML Engineer with RAG/vector search experience; can join in 30d.
+CAND_0046526,71,0.685298,5.5 YOE ML Engineer with RAG/vector search experience.
+CAND_0090584,72,0.68448,5.1 YOE ML Engineer with RAG/vector search experience; some concern on notice period (120 days) & low recent activity.
+CAND_0039383,73,0.684176,7.1 YOE Applied ML Engineer building RAG systems at product companies.
+CAND_0007052,74,0.684158,6.5 YOE ML Engineer with RAG/vector search experience; strong recent engagement.
+CAND_0002120,75,0.68414,6.5 YOE ML Engineer with RAG/vector search experience.
+CAND_0091745,76,0.683577,5.9 YOE Junior ML Engineer with RAG/vector search experience; can join in 30d.
+CAND_0024147,77,0.683084,5.9 YOE ML Engineer with RAG/vector search experience; strong recent engagement.
+CAND_0068811,78,0.681904,8.0 YOE Applied ML Engineer with RAG/vector search experience; can join in 30d.
+CAND_0053527,79,0.680996,7.0 YOE Junior ML Engineer with RAG/vector search experience; strong recent engagement.
+CAND_0032216,80,0.680003,6.1 YOE ML Engineer with RAG/vector search experience; can join in 30d.
+CAND_0012837,81,0.679719,6.4 YOE Junior ML Engineer with RAG/vector search experience; strong recent engagement.
+CAND_0096142,82,0.679661,5.0 YOE Applied ML Engineer building RAG systems at product companies; strong recent engagement; some concern on notice period (120 days).
+CAND_0024990,83,0.6788,5.2 YOE Junior ML Engineer with RAG/vector search experience; strong recent engagement.
+CAND_0043228,84,0.677112,6.8 YOE Applied ML Engineer with RAG/vector search experience; can join in 30d.
+CAND_0018094,85,0.676465,5.2 YOE ML Engineer with RAG/vector search experience.
+CAND_0037980,86,0.675972,9.0 YOE Senior Applied Scientist with RAG/vector search experience.
+CAND_0062561,87,0.67583,5.9 YOE ML Engineer with RAG/vector search experience; can join in 30d.
+CAND_0057529,88,0.675639,6.9 YOE Junior ML Engineer; matches 'applied ML' profile in JD; some concern on low recent activity.
+CAND_0085851,89,0.674596,7.0 YOE ML Engineer with RAG/vector search experience.
+CAND_0044883,90,0.673557,6.3 YOE AI Engineer with RAG/vector search experience; strong recent engagement.
+CAND_0074326,91,0.673322,6.4 YOE Junior ML Engineer; matches 'applied ML' profile in JD; strong recent engagement.
+CAND_0091909,92,0.672258,6.9 YOE Machine Learning Engineer building RAG systems at product companies.
+CAND_0066798,93,0.671175,5.1 YOE ML Engineer with RAG/vector search experience.
+CAND_0048166,94,0.669509,5.2 YOE ML Engineer with RAG/vector search experience; can join in 30d.
+CAND_0024620,95,0.668854,5.9 YOE AI Engineer with RAG/vector search experience.
+CAND_0090155,96,0.66832,5.8 YOE ML Engineer; matches 'applied ML' profile in JD.
+CAND_0040178,97,0.666104,5.0 YOE ML Engineer with RAG/vector search experience.
+CAND_0074339,98,0.665192,5.3 YOE ML Engineer with RAG/vector search experience; some concern on notice period (120 days).
+CAND_0031143,99,0.664598,5.5 YOE ML Engineer; matches 'applied ML' profile in JD; strong recent engagement; some concern on notice period (120 days).
+CAND_0093912,100,0.664479,5.3 YOE Senior Data Scientist with RAG/vector search experience; can join in 30d.
