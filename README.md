@@ -120,6 +120,7 @@ Reasoning is *template-based + extracted data only*. No LLM generation. We only 
 | --- | --- | --- | --- | --- |
 | Streamlit Cloud | 50 | <30 seconds | CPU | Ranked CSV + Dashboard |
 | Terminal CLI | 1,00,000 | ∼5 minutes | CPU | TalentPulse.csv with top 100 |
+
 *Meets Constraints:* No GPU needed, Memory <1GB, scales linearly with batch encoding.
 
 ---
