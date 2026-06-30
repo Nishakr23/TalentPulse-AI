@@ -1,6 +1,6 @@
 # TalentPulse AI - Next-Gen Neural Candidate Discovery 🚀
 
-*Team:* TalentPulse | *Team Leader:* Nisha | *Hackathon:* H2S + Redrob 2026
+*Team:* TalentPulse | *Team Leader:* Nisha Kumari | *Hackathon:* H2S + Redrob 2026
 
 AI-powered candidate ranking system that thinks like a senior recruiter. Combines Semantic AI + Behavioral Signals to rank candidates in 30 seconds with JD-aware reasoning.
 
